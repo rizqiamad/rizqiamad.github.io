@@ -1,56 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek1 STr HTML 27 02 2024</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Srisakdi&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB PORTOFOLIO</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/mix.css">
+  </head>
+  <body>
     <header>
-
-        <nav>
-            <div class="logo">
-                <h4>Rizqi Proyek 1</h4>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Assignment</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>   
-            </div>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#leasson-learn">Leasson</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li><a href="/index.html#map">Maps</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/creative.html">Creative</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="/img/polban.png" alt="POLBAN" />
+        <p>Hanif Ahmad</p>
+      </div>
     </header>
-    <div class="container">
     <main>
-        <div class="box flextwo">
-            <article>
-                <h2>Tentang Web</h2>
-                <p>Web Ini dibuat untuk memenuhi tugas Proyek 1. Beberapa sumber yang dipakai dalam pengerjaan tugas ini selain dari lms  adalah dari ... Terima Kasih</p>
-            </article>
+      <article id="home">
+        <div class="home-describe">
+          <h1>Hanif Ahmad Rizqullah</h1>
+          <p>
+            Hello World!, nama saya Hanif Ahmad Rizqullah dan saya adalah
+            mahasiswa di salah satu Politeknik terbaik seantero negeri, ya apa
+            lagi jika bukan Politeknik Negeri Bandung. Saya adalah orang yang
+            memiliki antusias kepada banyak hal, salah satu contohnya adalah
+            programming, walaupun hari ini saya belum terlihat menguasai, tapi
+            saya yakin beberapa bulan dari sekarang saya akan menjadi orang yang
+            mahir dalam programming. Saya memiliki banyak hobi, salah satu
+            contohnya adalah membaca buku, dan meneliti perilaku manusia.
+          </p>
         </div>
-        <aside class="box flexone">
-            <img src="img/RIZQI.png" class="image"/>
-            <h5>Muhammad Rizqi Sholahuddin</h5>
-        </aside>
+        <div class="home-image">
+          <div class="img">
+            <img src="/img/img-porto.png" alt="Hanif Ahmad" width="350px" />
+          </div>
+        </div>
+      </article>
+      <article id="about">
+        <h1>About</h1>
+        <div class="about-describe">
+          <p>
+            Saya sudah belajar lumayan banyak bahasa pemrograman, ada yang saya
+            pelajari dari kampus, dan ada juga yang saya pelajari sendiri
+            melalaui video youtube dan juga course yang ada di internet. Dan
+            saya juga lumayan mahir dalam menulis artikel, juga mengoperasikan
+            alat-alat elektronik.
+          </p>
+          <span>
+            <img src="/img/html.png" alt="HTML" />
+            <img src="/img/css.png" alt="CSS" />
+            <img src="/img/python.png" alt="PYTHON" />
+            <img src="/img/java.png" alt="JAVA" />
+            <img src="/img/javascript.png" alt="JAVASCRIPT" />
+            <img src="/img/c.png" alt="C" />
+          </span>
+        </div>
+      </article>
+      <article id="leasson-learn">
+        <div class="leasson">
+          <div class="motto">
+            <h2>MOTTO</h2>
+            <blockquote>
+              HARI INI HARUS LEBIH BAIK DARI HARI KEMAREN, MAKA KAMU AKAN
+              BERUNTUNG
+            </blockquote>
+          </div>
+          <div class="learn">
+            <h2>LEASSON LEARN</h2>
+            <ul>
+              <li>
+                Mempelajari github sederhana, tapi menurut saya akan sangat
+                dibutuhkan karena dengan dasar yang seperti itu saja sudah dapat
+                membantu dalam kolaborasi dan lain hal.
+              </li>
+              <li>
+                Saya mempelajari cara mengkomunikasikan suatu masalah kepada
+                teman, sehingga tidak berlarut-larut dalam masalah tersebut dan
+                dapat untuk mendapatkan solusinya.
+              </li>
+              <li>
+                Mempelajari cara untuk melakukan forking dari suatu repo kedalam
+                repo milik kita sendiri
+              </li>
+              <li>Mempelajari cara untuk melakukan Brench</li>
+              <li>Mempelajari cara untuk melakukan Merging</li>
+              <li>
+                Mempelajari cara untuk deploy dan melihat hasil kita di dalam
+                github
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article id="contact">
+        <div class="contact-title">
+          <span>How you can contact me?</span>
+          <h1>Contact Me!</h1>
+        </div>
+        <div class="contact-main">
+          <form action="#">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Masukkan Nama anda"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Cantumkan Email anda"
+            />
+            <textarea
+              name="message"
+              id="mesaage"
+              cols="50"
+              rows="10"
+              placeholder="Ceritakan kebutuhan anda"
+            ></textarea>
+            <button type="submit">Submit!</button>
+          </form>
+          <div class="medsos">
+            <p>dan jangan lupa untuk mengikuti kami di :</p>
+            <p>
+              <a href="https://www.instagram.com/hanifrizq.15/"
+                >https://www.instagram.com/hanifrizq.15/</a
+              >
+            </p>
+            <p>
+              <a href="https://github.com/rizqiamad"
+                >https://github.com/rizqiamad</a
+              >
+            </p>
+          </div>
+        </div>
+      </article>
+      <article id="map">
+        <h1>Ini Kampusku, jika ada yang ingi datang dan berkenalan</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.153515827361!2d107.57119757396188!3d-6.872202067237941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sid!2sid!4v1709042756831!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </article>
     </main>
-    <footer class="box">
-        Rizqi, Di depan Laptop 27 Februari 2024
-    </footer>
-    </div>
-</div>
-    <script src="js/main.js"></script>
-</body>
-
+    <footer>Copyright&copy; Hanif Ahmad Rizqullah all rights reserved</footer>
+  </body>
 </html>

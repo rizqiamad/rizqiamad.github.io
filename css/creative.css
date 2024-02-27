@@ -1,0 +1,12 @@
+div.img img{
+    height: 250px;
+    border-radius: 2rem;
+    transition: 400ms;
+    margin: 1.5rem;
+    box-shadow: 4px 7px 7px 0 #000;
+}
+div.img img:hover{
+    cursor: pointer;
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
