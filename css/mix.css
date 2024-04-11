@@ -14,16 +14,20 @@ header {
     z-index: 1;
     border-bottom: 2px rgba(0, 0, 0, 0.1) solid;
 }
-nav ul li {
+div.container{
+    display: none;
+}
+
+nav ul.list-main li {
     list-style: none;
     display: inline-block;
     margin: 15px;
 }
-nav ul li a {
+nav ul.list-main li a {
     text-decoration: none;
     color: rgb(224, 95, 95);
 }
-nav ul li a:hover {
+nav ul.list-main li a:hover {
     color: royalblue;
 }
 div.logo{
@@ -54,4 +58,50 @@ article {
 footer {
     text-align: center;
     padding: 20px 0;
+}
+ul.list{
+    margin: 0;
+    list-style-type: none;
+    background-color: #eee;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 50%;
+}
+ul.list li a{
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+ul.list li a:hover{
+    background-color: salmon;
+}
+div.overlay{
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.hidden{
+    display: none;
+}
+.fa{
+    margin: 10px;
+    display: inline-block;
+}
+@media only screen and (max-width:835px){
+    nav > ul{
+        display: none;
+    }
+    div.container{
+        margin-left: 10px;
+        margin-top: 40%;
+        display: block;
+    }
 }

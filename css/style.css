@@ -20,8 +20,11 @@ div.home-describe p {
   text-align: center;
 }
 div.home-image {
-  padding: 50px;
+  text-align: center;
   width: 25%;
+}
+div.home-image img{
+  width: 100%;
 }
 article#about h1 {
   text-align: center;
@@ -54,7 +57,7 @@ blockquote::after {
 }
 div.learn {
   margin: 100px auto;
-  width: 600px;
+  width: 90%;
 }
 div.learn li {
   text-align: left;
@@ -73,7 +76,7 @@ div.contact-title span {
 }
 form {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 40% 40%;
   justify-content: center;
   gap: 10px;
 }
@@ -109,4 +112,16 @@ div.medsos a{
 }
 div.medsos a:hover{
   color: red;
+}
+@media only screen and (max-width:830px) {
+  article#home {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.home-describe {
+    width: 100%;
+  }
+  div.home-image {
+    width: 50%;
+  }
 }
