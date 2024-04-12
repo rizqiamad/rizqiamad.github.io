@@ -38,5 +38,5 @@ for capt in captions:
         time_info = parts[-1].strip()
         data.append({"judul":title,"kategori":kategori.text,"waktu_publish":time_info,"waktu_scraping":formatted_date +" "+formatted_time})
     
-with open('data2.json','w') as f:
+with open('data2.json','a') as f:
     json.dump(data,f,indent=2)
