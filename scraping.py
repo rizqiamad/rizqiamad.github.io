@@ -1,7 +1,7 @@
 import json
+from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
 
 # Get the current date and time
 current_datetime = datetime.now()
@@ -16,13 +16,10 @@ formatted_time = current_time.strftime("%H:%M:%S")
 
 # Making a GET request
 r = requests.get('https://www.republika.co.id/')
-
-# Parsing the HTML
 soup = BeautifulSoup(r.content, 'html.parser')
 
-latest = soup.find('ul',class_='list-group wrap-latest')
-
-captions = latest.find_all('div',class_='caption')
+latest = soup.find('ul', class_='list-group wrap-latest')
+captions = latest.find_all('div', class_='caption')
 
 data = []
 
@@ -38,5 +35,22 @@ for capt in captions:
         time_info = parts[-1].strip()
         data.append({"judul":title,"kategori":kategori.text,"waktu_publish":time_info,"waktu_scraping":formatted_date +" "+formatted_time})
     
-with open('data2.json','a') as f:
-    json.dump(data,f,indent=2)
+
+# Read existing data from JSON file
+existing_judul_data = []
+try:
+    with open('data2.json', 'r') as f:
+        existing_data = json.load(f)
+        existing_judul_data = {item["judul"] for item in existing_data}
+except FileNotFoundError:
+    pass
+
+# Check if each new data item already exists in the existing data
+for item in data:
+    judul = item["judul"]
+    if judul not in existing_judul_data:
+        existing_data.append(item)
+
+# Write the combined data to the JSON file
+with open('data2.json', 'w') as f:
+    json.dump(existing_data, f, indent=2)
