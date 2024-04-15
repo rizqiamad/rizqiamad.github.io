@@ -37,19 +37,20 @@ for capt in captions:
     
 
 # Read existing data from JSON file
-existing_judul_data = []
+existing_data = []
 try:
     with open('data2.json', 'r') as f:
         existing_data = json.load(f)
-        existing_judul_data = {item["judul"] for item in existing_data}
 except FileNotFoundError:
     pass
+
+existing_judul_data = {item["judul"] for item in existing_data}
 
 # Check if each new data item already exists in the existing data
 for item in data:
     judul = item["judul"]
     if judul not in existing_judul_data:
-        existing_data.append(item)
+            existing_data.append(item)
 
 # Write the combined data to the JSON file
 with open('data2.json', 'w') as f:
